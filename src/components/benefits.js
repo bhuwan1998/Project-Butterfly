@@ -1,6 +1,6 @@
 import React from 'react'
 import {Container, Row, Col} from 'reactstrap'
-import { FaCode } from 'react-icons/fa'
+import { FaCode, FaCodepen } from 'react-icons/fa'
 import { StaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image/withIEPolyfill'
 import styled from 'styled-components'
@@ -22,7 +22,7 @@ let StyledImg = styled(props => <Img {...props}/>)`
 
 let Benefit = ({title, content}) => (
   <div className="d-flex mb-4">
-    <FaCode size={30} className="text-primary"/>
+    <FaCodepen size={30} className="text-primary"/>
     <div className="ml-3">
       <h4>{title}</h4>
       <p className="m-0 text-muted">{content}</p>
@@ -35,11 +35,11 @@ let Benefits = ({data}) => (
     <Row className="d-flex align-items-center">
       <Col md="6">
         <div className="mb-4">
-          <h2 className="text-primary">Next Generation Websites</h2>
-          <p className="text-muted">Extremely fast. Just try it.</p>
+          <h2 className="text-primary">Project Management </h2>
+          <p className="text-muted">From IT to Construction</p>
         </div>
-        <Benefit title="Styled Components" content="We're using the css-in-js methodology to make this website extremely fast!"/>
-        <Benefit title="Gatsby" content="Gatsby offers a huge range of performance enhancements!"/>
+        <Benefit title="Business IT Solutions" content="Description"/>
+        <Benefit title="Butterfly Construction Management" content="Description"/>
       </Col>
       <Col md="6">
         <StyledImg fluid={data.file.childImageSharp.fluid} objectFit="contain" objectPosition="50% 50%"/>

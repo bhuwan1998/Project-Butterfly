@@ -9,8 +9,8 @@ const Background = styled.div`
   text-align: center;
 `
 
-export default ({title}) => (
+export default () => (
   <Background>
-    <h1>{title}</h1>
+    <h1>Buttefly Solutions</h1>
   </Background>
 )

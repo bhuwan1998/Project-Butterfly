@@ -5,7 +5,7 @@ import PageTitle from '../components/page-title'
 
 export default ({title, children}) => (
   <Layout>
-    <PageTitle title={title}/>
+    <PageTitle title="Butterfly Solutions"/>
     <Container className="py-4">
       <Row className="d-flex justify-content-center">
         <Col sm={10}>

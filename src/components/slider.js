@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
+import Button from './btn';
 
 import '../../node_modules/slick-carousel/slick/slick.css';
 import '../../node_modules/slick-carousel/slick/slick-theme.css';
@@ -38,20 +39,23 @@ export default () => {
       <Slider {...settings}>
         <div>
           <div className="text-center">
-            <h1>{title}</h1>
-            <p>By {author}</p>
+            <h1>IT Solutions</h1>
+            <p> Description </p>
+            <Button onClick = {() => alert("Clicked")}>Learn More </Button> 
           </div>
         </div>
         <div>
           <div className="text-center">
-            <h1>{title}</h1>
-            <p>By {author}</p>
+            <h1>Construction</h1>
+            <p> Description </p>
+            <Button onClick = {() => alert("Clicked")}>Learn More </Button> 
           </div>
         </div>
         <div>
           <div className="text-center">
-            <h1>{title}</h1>
-            <p>By {author}</p>
+            <h1> Careers </h1>
+            <p> Description</p>
+            <Button onClick = {() => alert("Clicked")}>Learn More </Button> 
           </div>
         </div>
       </Slider>

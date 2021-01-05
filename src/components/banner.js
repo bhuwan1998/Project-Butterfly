@@ -4,7 +4,7 @@ import { HeaderItem, IconLink } from './bannerHelper'
 import styled from 'styled-components'
 import { FaInstagram, FaFacebookF, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
-export default ({title, phone = '123', facebook_url = null, instagram_url = null, address}) => {
+export default ({title, phone = 'Phone Number Here', facebook_url = null, instagram_url = null, address}) => {
   const phone_url = 'tel:' + phone.replace(/ /g, '')
   return (
     <div className="bg-light">
@@ -12,10 +12,10 @@ export default ({title, phone = '123', facebook_url = null, instagram_url = null
         <div className="d-flex py-2 align-items-center">
           <div className="d-flex mr-auto">
             <span className="d-none d-sm-inline font-weight-bold">
-              {title}
+              Butterfly Solutions
             </span>
             <HeaderItem
-              phone={phone}
+              phone="Phone Number Here"
               Icon={FaPhone}
               url={phone_url}
               klass="d-sm-none"
@@ -23,13 +23,13 @@ export default ({title, phone = '123', facebook_url = null, instagram_url = null
           </div>
           <div className="d-flex">
             <HeaderItem
-              phone={address}
+              phone="Address Here"
               Icon={FaMapMarkerAlt}
               url="/contact"
               klass="d-lg-flex d-none mr-3"
             />
             <HeaderItem
-              phone={phone}
+              phone="Phone Number Here"
               Icon={FaPhone}
               url={phone_url}
               klass="d-sm-flex d-none mr-3"

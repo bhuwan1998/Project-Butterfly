@@ -5,13 +5,12 @@
     {"name": "Features", "url": "/test"}
   ]},
   {"name": "Services", "url": "", "dropdownItems": [
-    {"name": "Features", "url": "/test"},
-    {"name": "Features", "url": "/test"},
+    {"name": "Project Management", "url": "/test"},
     {"name": "Features", "url": "/test"}
   ]},
   {"name": "Company", "url": "", "dropdownItems": [
-    {"name": "Features", "url": "/test"},
-    {"name": "Features", "url": "/test"},
-    {"name": "Features", "url": "/test"}
+    {"name": "History", "url": "/test"},
+    {"name": "Projects", "url": "/test"},
+    {"name": "Clients", "url": "/test"}
   ]}
 ]

@@ -48,9 +48,9 @@ export default () => {
   return (
     <Container className="py-5">
       <Row>
-        <Feature title="Lorem Ipsum" description="testing" img={data.slide1.childImageSharp.fluid}/>
-        <Feature title="Social Media" description="testing" img={data.slide2.childImageSharp.fluid}/>
-        <Feature title="Digital Technology" description="testing" img={data.slide3.childImageSharp.fluid}/>
+        <Feature title="Learn More" description="" img={data.slide1.childImageSharp.fluid}/>
+        <Feature title="Social Media" description="" img={data.slide2.childImageSharp.fluid}/>
+        <Feature title="Mission" description="" img={data.slide3.childImageSharp.fluid}/>
       </Row>
     </Container>
   )

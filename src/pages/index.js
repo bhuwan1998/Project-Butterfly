@@ -1,22 +1,24 @@
 import React from "react"
 
-import { Container, Row, Col } from 'reactstrap'
-import Link from '../components/link'
-import Button from '../components/btn'
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { FaGithub, FaBolt, FaHome, FaWrench } from 'react-icons/fa'
-import Form from '../components/form'
-import Slider from '../components/slider'
-import Box from '../components/box'
-import Hr from '../components/hr'
-import Benefits from '../components/benefits'
-import styled from 'styled-components'
-import HomeFeatures from '../components/homeFeatures'
-
+import { Container, Row, Col } from 'reactstrap';
+import Link from '../components/link';
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { FaBolt, FaHome, FaChartBar } from 'react-icons/fa';
+import Slider from '../components/slider';
+import Box from '../components/box';
+import Hr from '../components/hr';
+import Benefits from '../components/benefits';
+import styled from 'styled-components';
+import HomeFeatures from '../components/homeFeatures';
 let StyledBackground = styled.div`
   background: linear-gradient(to bottom,#f9fbfd 0,#fff 100%);
 `
+ 
+
+
+
+
 
 let Service = ({title, Icon = FaHome}) => (
   <Col>
@@ -31,28 +33,22 @@ let Service = ({title, Icon = FaHome}) => (
 
 export default () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Butterfly Solutions" />
     <Slider/>
-    <Container className="pt-4">
+    <Container className="pt-4 d-flex justify-content-center">
       <div className="text-center">
-        <h4>A slightly opinionated Gatsby starter template.</h4>
-        <p className="text-muted">Built with love on the Gold Coast, QLD Australia</p>
+        <h4>Butterfly Solutions</h4>
+        <p className="text-muted"> Canberra Based Project Management Company </p>
       </div>
     </Container>
     <Container className="py-5">
       <h2 className="text-center mb-4">Services</h2>
-      <Row>
-        <Service title="Websites"/>
-        <Service title="SEO" Icon={FaBolt}/>
-        <Service title="API" Icon={FaWrench}/>
+      <Row className="d-flex justify-content-center">
+        <Service title="Clients"/>
+        <Service title="IT Solutions" Icon={FaBolt}/>
+        <Service title="Project Management" Icon={FaChartBar}/>
       </Row>
     </Container>
-    <div className="text-center py-5">
-      <Button to="https://github.com/jeremylynch/gatsby-strapi-starter" className="btn btn-primary btn-lg">
-        <FaGithub className="mr-1"/>
-        View on Github
-      </Button>
-    </div>
     <StyledBackground>
       <Benefits/>
       <div className="py-5">
@@ -60,9 +56,8 @@ export default () => (
           <Row className="d-flex justify-content-center">
             <Col md={8}>
               <Box style={{textAlign: 'left'}}>
-                <h3 className="text-center">Reactstrap Form Fields</h3>
+                <h3 className="text-center">Contents in a Card Format</h3>
                 <Hr/>
-                <Form/>
               </Box>
             </Col>
           </Row>

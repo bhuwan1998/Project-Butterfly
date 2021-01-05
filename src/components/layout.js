@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
   let {title, phone, address} = data.site.siteMetadata
   return (
     <ThemeProvider theme={theme}>
-      <Banner title={title} phone={phone} address={address}/>
+      <Banner title="Butterfly Solutions" phone={phone} address={address}/>
       <Header siteTitle={title}/>
       <main>{children}</main>
       <Footer/>
