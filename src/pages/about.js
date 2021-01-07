@@ -1,9 +1,8 @@
 import React from 'react'
 import PageTemplate from '../components/pageTemplate'
 import Hr from '../components/hr';
-import { FaWarehouse, FaBolt, FaHome, FaPhotoVideo } from 'react-icons/fa';
+import { FaWarehouse, FaBolt, FaPhotoVideo } from 'react-icons/fa';
 import {Row, Container} from 'reactstrap';
-import { Email } from '@material-ui/icons';
 
 
 

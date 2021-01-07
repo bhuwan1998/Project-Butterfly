@@ -12,10 +12,24 @@ let StyledFeature = styled.div`
   }
 `
 
+let image = {
+  "slide1": {
+    "childImageSharp": {
+        "fluid": {
+            "base64": null,
+            "aspectRatio": null,
+            "src": "/home/bhuwan/Desktop/Project-Butterfly/src/assets/images/slide1.jpg",
+            "srcSet": null,
+            "sizes": null
+        }
+    }
+  }
+}
+
 let Feature = ({title, description, img}) => (
   <Col md={4}>
     <StyledFeature>
-      <Img fluid={img}/>
+      <Img src="src/assets/images/slide1.jpg" fluid/>
       <div className="p-3">
         <h5>{title}</h5>
         <p>{description}</p>
@@ -48,7 +62,7 @@ export default () => {
   return (
     <Container className="py-5">
       <Row>
-        <Feature title="Learn More" description="" img={data.slide1.childImageSharp.fluid}/>
+        <Feature title="Learn More" description="" />
         <Feature title="Social Media" description="" img={data.slide2.childImageSharp.fluid}/>
         <Feature title="Mission" description="" img={data.slide3.childImageSharp.fluid}/>
       </Row>

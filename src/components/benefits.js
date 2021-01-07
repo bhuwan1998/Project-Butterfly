@@ -35,11 +35,12 @@ let Benefits = ({data}) => (
     <Row className="d-flex align-items-center">
       <Col md="6">
         <div className="mb-4">
-          <h2 className="text-primary">Project Management </h2>
-          <p className="text-muted">From IT to Construction</p>
+          <h2 className="text-primary"> Consultancy  </h2>
+          <p className="text-muted"> </p>
         </div>
-        <Benefit title="Business IT Solutions" content="Description"/>
+        {/* <Benefit title="Business IT Solutions" content="Description"/>
         <Benefit title="Butterfly Construction Management" content="Description"/>
+        <Benefit */}
       </Col>
       <Col md="6">
         <StyledImg fluid={data.file.childImageSharp.fluid} objectFit="contain" objectPosition="50% 50%"/>

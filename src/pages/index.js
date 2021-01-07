@@ -11,7 +11,6 @@ import Hr from '../components/hr';
 import Benefits from '../components/benefits';
 import styled from 'styled-components';
 import HomeFeatures from '../components/homeFeatures';
-import Image from 'material-ui-image';
 import MaterialCard from '../components/react-material-card';
 let StyledBackground = styled.div`
   background: linear-gradient(to bottom,#f9fbfd 0,#fff 100%);
@@ -36,28 +35,35 @@ let Service = ({title, Icon = FaHome}) => (
 export default () => (
   <Layout>
     <SEO title="Butterfly Solutions" />
-    <Slider/>
-    <Container className="pt-4 d-flex justify-content-center">
+    <div id="Slider_">
+      <Slider title_1="IT Consultancy" content_1="Description"
+            title_2="Butterfly Media Solutions" content_2="Description"
+            title_3="Butterfly Buildings" content_3="Description" />
+
+    </div>
+    
+    {/* <Container className="pt-4 d-flex justify-content-center">
       <div className="text-center">
         <h4>Butterfly Solutions</h4>
         <p className="text-muted"> Canberra Based Project Management Company </p>
       </div>
-    </Container>
-    <Container className="py-5">
+    </Container> */}
+    {/* <Container className="py-5">
       <h2 className="text-center mb-4">Services</h2>
       <Row className="d-flex justify-content-center">
         <Service title="Clients"/>
         <Service title="IT Solutions" Icon={FaBolt}/>
         <Service title="Project Management" Icon={FaChartBar}/>
       </Row>
-    </Container>
+    </Container> */}
     <StyledBackground>
-      <Benefits/>
+      {/* <Benefits/> */}
       <div className="py-5">
         <Container>
           <Row className="d-flex justify-content-center">
             <Col md={12}>
               <Box style={{textAlign: 'left'}}>
+                <Benefits />
                 <p className="">
                   Welcome to buterfly consultancy, where we transform your ideas into solutions. Together, we can help create the base and 
                   run your business using modern technology, corporate strategy and implementation. We help you to create opportunities that 
@@ -72,10 +78,17 @@ export default () => (
             <br />
             <Container>
             <Row className="d-flex">
-            <Col md={8}>
+            <Col md={8} xs={12}>
               <Box>
               <MaterialCard />
               </Box> 
+            </Col>
+            <Col md={4} xs={12}>
+              <Box style={{textAlign: 'left'}}>
+                <h1> Project Management <FaChartBar size={30} className="text-primary" /></h1> 
+                <p> Lorem Ipsum </p>
+              </Box>
+
             </Col>
           </Row>
         </Container>

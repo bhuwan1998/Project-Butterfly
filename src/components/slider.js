@@ -14,7 +14,7 @@ const SliderContainer = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 `
 
-export default () => {
+
   var settings = {
     dots: true,
     infinite: true,
@@ -22,43 +22,85 @@ export default () => {
     slidesToShow: 1,
     slidesToScroll: 1
   };
-  const sideMetadata = useStaticQuery(graphql`
-    query TitleQuery {
-      site {
-        siteMetadata {
-          title
-          author
-        }
-      }
-    }
-  `)
+  // const sideMetadata = useStaticQuery(graphql`
+  //   query TitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //         author
+  //       }
+  //     }
+  //   }
+  // `)
 
-  let {title, author} = sideMetadata.site.siteMetadata
-  return (
-    <SliderContainer>
+
+export default ({title_1, content_1, title_2, content_2, title_3, content_3}) => (
+    <SliderContainer> 
       <Slider {...settings}>
-        <div>
+      <div>
           <div className="text-center">
-            <h1>IT Solutions</h1>
-            <p> Description </p>
+            <h1>{title_1}</h1>
+            <p> {content_1} </p>
             <Button onClick = {() => alert("Clicked")}>Learn More </Button> 
           </div>
-        </div>
-        <div>
+          </div>
+          <div>
           <div className="text-center">
-            <h1>Construction</h1>
-            <p> Description </p>
+            <h1>{title_2}</h1>
+            <p> {content_2} </p>
             <Button onClick = {() => alert("Clicked")}>Learn More </Button> 
           </div>
-        </div>
-        <div>
+          </div>
+          <div>
           <div className="text-center">
-            <h1> Careers </h1>
-            <p> Description</p>
+            <h1>{title_3}</h1>
+            <p> {content_3} </p>
             <Button onClick = {() => alert("Clicked")}>Learn More </Button> 
           </div>
         </div>
       </Slider>
     </SliderContainer>
   )
-}
+
+
+
+//   const SliderComponent = ({title, description}) =>{
+//     let content = 
+//    (
+//     <SliderContainer>
+//       <Slider {...settings}>
+//         <div>
+//           <div className="text-center">
+//             <h1>{title}</h1>
+//             <p> {description} </p>
+//             <Button onClick = {() => alert("Clicked")}>Learn More </Button> 
+//           </div>
+//         </div>
+//         <div>
+//           <div className="text-center">
+//             <h1>{title}</h1>
+//             <p> {description} </p>
+//             <Button onClick = {() => alert("Clicked")}>Learn More </Button> 
+//           </div>
+//         </div>
+//         <div>
+//           <div className="text-center">
+//             <h1> {title} </h1>
+//             <p> {description} </p>
+//             <Button onClick = {() => alert("Clicked")}>Learn More </Button> 
+//           </div>
+//         </div>
+//       </Slider>
+//     </SliderContainer>
+//   )
+//   return content; 
+//  }
+
+// export default SliderComponent;
+
+
+
+
+
+
+
