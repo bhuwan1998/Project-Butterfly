@@ -18,7 +18,7 @@ let Cirle = Styled.div`
 `
 
 let ContactItem = ({text, type, Icon, href}) => (
-  <Col xs={6} lg={3} className="d-flex flex-column align-items-center" style={{wordBreak: 'break-word'}}>
+  <Col  className="d-flex flex-column align-items-center" style={{wordBreak: 'break-word'}}>
     <Cirle className="h-4-rem w-4-rem bg-primary-faded my-3 absolute-center rounded-circle">
       <Icon size={30}/>
     </Cirle>
@@ -37,11 +37,11 @@ export default ({data}) => {
     <Layout>
       <PageTitle title="Contact Us"/>
       <Container>
-        <Row className="py-5">
-          <ContactItem text={address} type="Address" Icon={FaMapMarkerAlt}/>
-          <ContactItem text={email} href={`mailto:${email}`} type="Email" Icon={FaEnvelope}/>
-          <ContactItem text={phone} href={`tel:${phone}`} type="Phone" Icon={FaPhone}/>
-          <ContactItem text={fax} type="Fax" Icon={FaFax}/>
+        <Row md-offset={2}>
+          <Col md={4} xs={12}><ContactItem text={address} type="Address" Icon={FaMapMarkerAlt}/></Col>
+          <Col md={4} xs={12}><ContactItem text={email} href={`mailto:${email}`} type="Email" Icon={FaEnvelope}/> </Col>
+          <Col md={4} xs={12}><ContactItem text={phone} href={`tel:${phone}`} type="Phone" Icon={FaPhone}/></Col> 
+            
         </Row>
         <hr/>
         <Row className="py-5">

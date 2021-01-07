@@ -11,6 +11,8 @@ import Hr from '../components/hr';
 import Benefits from '../components/benefits';
 import styled from 'styled-components';
 import HomeFeatures from '../components/homeFeatures';
+import Image from 'material-ui-image';
+import MaterialCard from '../components/react-material-card';
 let StyledBackground = styled.div`
   background: linear-gradient(to bottom,#f9fbfd 0,#fff 100%);
 `
@@ -54,11 +56,26 @@ export default () => (
       <div className="py-5">
         <Container>
           <Row className="d-flex justify-content-center">
-            <Col md={8}>
+            <Col md={12}>
               <Box style={{textAlign: 'left'}}>
-                <h3 className="text-center">Contents in a Card Format</h3>
+                <p className="">
+                  Welcome to buterfly consultancy, where we transform your ideas into solutions. Together, we can help create the base and 
+                  run your business using modern technology, corporate strategy and implementation. We help you to create opportunities that 
+                  can metamorphose and help you reach your true potential in order to achieve goals. Buttefly also provides comprehensive liaison 
+                  strategies with in-depth knwoledge to ensure high quality delivery of solutions that involves a unique and practical approach.
+                </p>
                 <Hr/>
               </Box>
+            </Col>
+            </Row>
+            </Container>
+            <br />
+            <Container>
+            <Row className="d-flex">
+            <Col md={8}>
+              <Box>
+              <MaterialCard />
+              </Box> 
             </Col>
           </Row>
         </Container>

@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Box = styled.div`
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
   border-color: #F4F5F7;
   transition-duration: 0.3s;
