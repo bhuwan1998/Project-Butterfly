@@ -1,17 +1,16 @@
-let facebook_pixel = ''
+let facebook_pixel = '12'
 let gtm = '1234'
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Bootstrap Strapi Starter`,
-    description: `A slightly opinionated Gatsby starter template. `,
-    author: `Jeremy Lynch`,
-    siteUrl: `https://gatsby-strapi-starter.netlify.com/`,
-    phone: '180012345',
-    fax: '180012345',
-    address: '123 fake street',
-    email: 'contact@test.com'
-
+    title: `Butterfly Solutions`,
+    description: `Butterfly Solutions `,
+    author: `Bhuwan Bansal`,
+    siteUrl: "https://needstobetheproductionurl.com",
+    phone: `+61 404004925`,
+    address: `Butterfly Consultancy, P.O BOX 5026, Chisholm ACT 2905`,
+    email: `contactus@butterflyconsultancy.com.au`, 
+    pathPrefix: `/home`  
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

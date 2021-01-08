@@ -12,19 +12,7 @@ let StyledFeature = styled.div`
   }
 `
 
-let image = {
-  "slide1": {
-    "childImageSharp": {
-        "fluid": {
-            "base64": null,
-            "aspectRatio": null,
-            "src": "/home/bhuwan/Desktop/Project-Butterfly/src/assets/images/slide1.jpg",
-            "srcSet": null,
-            "sizes": null
-        }
-    }
-  }
-}
+
 
 let Feature = ({title, description, img}) => (
   <Col md={4}>
@@ -39,32 +27,13 @@ let Feature = ({title, description, img}) => (
 )
 
 export default () => {
-  const data = useStaticQuery(graphql`
-    fragment defaultImage on File {
-      childImageSharp {
-        fluid(maxWidth: 400, maxHeight: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    query featuresQuery {
-      slide1: file(relativePath: { eq: "slide1.jpg" }) {
-        ...defaultImage
-      }
-      slide2: file(relativePath: { eq: "slide2.jpg" }) {
-        ...defaultImage
-      }
-      slide3: file(relativePath: { eq: "slide3.jpg" }) {
-        ...defaultImage
-      }
-    }
-  `)
+  
   return (
     <Container className="py-5">
       <Row>
         <Feature title="Learn More" description="" />
-        <Feature title="Social Media" description="" img={data.slide2.childImageSharp.fluid}/>
-        <Feature title="Mission" description="" img={data.slide3.childImageSharp.fluid}/>
+        <Feature title="Social Media" description="" />
+        <Feature title="Mission" description="" />
       </Row>
     </Container>
   )

@@ -85,7 +85,7 @@ export default () => (
             </Col>
             <Col md={4} xs={12}>
               <Box style={{textAlign: 'left'}}>
-                <h1> Project Management <FaChartBar size={30} className="text-primary" /></h1> 
+                <h1 h1-sm> Project Management <FaChartBar size={30} className="text-primary" /></h1> 
                 <p> Lorem Ipsum </p>
               </Box>
 

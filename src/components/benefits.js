@@ -42,9 +42,7 @@ let Benefits = ({data}) => (
         <Benefit title="Butterfly Construction Management" content="Description"/>
         <Benefit */}
       </Col>
-      <Col md="6">
-        <StyledImg fluid={data.file.childImageSharp.fluid} objectFit="contain" objectPosition="50% 50%"/>
-      </Col>
+       
     </Row>
   </Container>
 )

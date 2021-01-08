@@ -81,3 +81,7 @@ p {
   background-color: rgba(red($primary), green($primary), blue($primary), 0.2);
 }
 
+.responsive {
+  width: 100%;
+  height: auto
+}
