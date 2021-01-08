@@ -11,7 +11,7 @@
   <li> If node and npm is not installed on your system then follow the instructions of this link 
     <a href="https://nodejs.org/en/download/">Node </a></li>
   <li> Use the command 'npm run develop' to compile the Gatsby website and run it on your local port </li> 
-  <li> Go to the browser and type 'localhost:/3000' </li>
+  <li> Go to the browser and type 'localhost:/8000' </li>
  </ol>
 
  <h3> To do </h3>
